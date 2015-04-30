@@ -92,6 +92,9 @@ default['tungsten']['mysqlServiceName']      = node['mysql']['server']['service_
 
 default['tungsten']['backupRetention'] = 3
 
+default['tungsten']['connection']['keepAlive']['interval'] = 'autodetect'
+default['tungsten']['connection']['keepAlive']['timeout'] = 'autodetect'
+
 default['tungsten']['mysqlConfigDir']        = node['mysql']['server']['directories']['confd_dir']
 default['tungsten']['mysqlConfigFile']       = "#{default['tungsten']['mysqlConfigDir']}/tungsten.cnf"
 

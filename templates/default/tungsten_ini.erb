@@ -41,6 +41,9 @@ backup-directory=<%= node['tungsten']['backupDir'] -%>
 
 backup-retention=<%= node['tungsten']['backupRetention'] -%>
 
+connection.keepAlive.interval = <%= node['tungsten']['connection']['keepAlive']['interval'] -%>
+connection.keepAlive.timeout = <%= node['tungsten']['connection']['keepAlive']['timeout'] -%>
+
 skip-validation-check=MySQLPermissionsCheck
 #skip-validation-check=ManagerWitnessNeededCheck
 start-and-report=true
